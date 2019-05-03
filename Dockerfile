@@ -4,7 +4,7 @@ FROM nginx:1.15.8-alpine
 RUN apk update && apk add --no-cache curl-dev git nodejs-current-npm openssl vim && rm -rf /var/cache/apk/*
 
 # add code
-RUN git clone https://github.com/srvaudit/warroom.git /var/www/warroom
+#RUN git clone https://github.com/srvaudit/warroom.git /var/www/warroom
 
 # vhost
 RUN rm /etc/nginx/conf.d/default.conf
